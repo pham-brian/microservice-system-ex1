@@ -5,14 +5,6 @@ spring:
         active: dev
     cloud:
         config:
-            uri: http://localhost:8888
+            uri: http://localhost:8886
             label: master
-eureka:
-    client:
-        serviceUrl:
-            defaultZone: http://localhost:8761/eureka/
-management:
-    security:
-        enabled: false
-server:
-    port: 8081
+
