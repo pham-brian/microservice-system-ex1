@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: zipkin-server
+    profiles:
+        active: dev
+    cloud:
+        config:
+            uri: http://localhost:8886
+            label: master
+
+
