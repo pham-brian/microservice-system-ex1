@@ -38,11 +38,13 @@ class MessageRestController {
 
 	@RequestMapping("/get/service2/msg")
 	String getService2Msg() {
+		System.out.println("Connect to service1 to get message .....");
 		return service2Proxy.getService2Msg();
 	}
 
-	@RequestMapping("/get/service2/exeption")
+	@RequestMapping("/get/service2/exception")
 	public String getException() {
+		System.out.println("Connect to service1 to get exception ..... ");
 		return service2Proxy.getHandleException();
 	}
 
